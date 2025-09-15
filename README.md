@@ -1,6 +1,13 @@
 # UploadFile_MinIO
 
 ```csharp
+private readonly IMinioClient minioClient;
+
+    public ExampleController(IMinioClient minioClient)
+    {
+        this.minioClient = minioClient;
+    }
+
 var endpoint = "localhost:9000";
 var accessKey = "minioadmin";
 var secretKey = "minioadmin";
